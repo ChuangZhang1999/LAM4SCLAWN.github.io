@@ -455,45 +455,6 @@ End paper poster -->
 <section class="section" id="code">
   <div class="container is-max-desktop content">
     <h2 class="title is-3">Code &amp; Reproducibility</h2>
-
-    <p>
-      The implementation of <strong>Large AI Model-Enabled Secure Communications in Low-Altitude Wireless Networks</strong> 
-      will be made publicly available <strong>after the paper is published</strong>.
-    </p>
-    <p>
-      该工作对应的完整代码将在 <strong>论文正式发表后</strong> 对外公开。
-    </p>
-
-    <hr>
-
-    <h3 class="title is-4">Environment Setup</h3>
-    <p>Once the code is released, you can set up the environment as follows:</p>
-    <pre><code class="language-bash">
-# Create conda environment
-conda create -n lawn_secure python=3.10
-conda activate lawn_secure
-
-# Install required packages
-pip install -r requirements.txt
-    </code></pre>
-
-    <h3 class="title is-4">Quick Start (Example)</h3>
-    <p>Example commands to reproduce the main case study in the paper:</p>
-    <pre><code class="language-bash">
-# Train LLM-enabled secure communication policy
-python train_secure_policy.py \
-  --config configs/lawn_secure.yaml \
-  --scenario low_altitude_urban \
-  --seed 42
-
-# Evaluate the learned policy
-python eval_secure_policy.py \
-  --checkpoint checkpoints/best_model.pt \
-  --num_episodes 100
-    </code></pre>
-
-    <h3 class="title is-4">High-level Pseudocode</h3>
-    <p>The core LLM-assisted secure communication framework can be summarized as:</p>
     <pre><code class="language-python">
 # Pseudocode for LLM-enabled secure communication in LAWNs
 
@@ -519,13 +480,6 @@ for episode in range(num_episodes):
 
         state = next_state
     </code></pre>
-
-    <p>
-      The actual codebase may slightly differ from this pseudocode. 
-      Detailed usage instructions and additional examples will be provided in the 
-      <a href="https://github.com/ChuangZhang1999/CoT-LLM-LAWN-Secure-Communications/" target="_blank">official repository</a> 
-      once it is publicly released after publication.
-    </p>
   </div>
 </section>
 <!-- End Code / Reproducibility section -->
